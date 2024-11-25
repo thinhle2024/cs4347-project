@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd">
+	<named-query name="Administrator.findAll">
+		<query>SELECT a FROM Administrator a</query>
+	</named-query>
+	<named-query name="Mainoffice.findAll">
+		<query>SELECT m FROM Mainoffice m</query>
+	</named-query>
+	<named-query name="Vendor.findAll">
+		<query>SELECT v FROM Vendor v</query>
+	</named-query>
+	<named-query name="Office.findAll">
+		<query>SELECT o FROM Office o</query>
+	</named-query>
+	<named-query name="Orderplacement.findAll">
+		<query>SELECT o FROM Orderplacement o</query>
+	</named-query>
+	<named-query name="Employee.findAll">
+		<query>SELECT e FROM Employee e</query>
+	</named-query>
+	<named-query name="Sold.findAll">
+		<query>SELECT s FROM Sold s</query>
+	</named-query>
+	<named-query name="Product.findAll">
+		<query>SELECT p FROM Product p</query>
+	</named-query>
+	<named-query name="Shipped.findAll">
+		<query>SELECT s FROM Shipped s</query>
+	</named-query>
+	<named-query name="Shipped.findAllUnApproved">
+		<query>SELECT s FROM Shipped s WHERE s.shippedDate IS NULL</query>
+	</named-query>	
+</entity-mappings>
